@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 .menu {
@@ -28,24 +29,27 @@ body {
 .menu div {
     padding: 0 10px;
 }
-.terror, .comedia, .drama, .romance {
-    padding: 20px;
+.redesSociales{
+    background-color: aqua;
+}
+p {
+    color: white;
+    margin-left: 3%;
+    margin-right: 3%;
+    text-align: justify;
+}
+h1 {
+    color: blue;
+    font-style: italic;
+    
+}
+h2{
+    color: blue;
+}
+li {
+    color: white;
 }
 
-.terror {
-    background-color: #FF5733;
-}
-
-.comedia {
-    background-color: #00FF00;
-}
-
-.drama {
-    background-color: #2fa1fe;
-}
-.romance{
-    background-color: red;
-}
 
 .footer {
     background-color: #333;

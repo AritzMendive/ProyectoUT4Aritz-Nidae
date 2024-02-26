@@ -12,17 +12,40 @@
             LOGO
         </div>
         <div class="buscador">
-            BUSCADOR
+            <form action="" method="get">
+                <label for="buscar"><img src="img/buscar.png" alt="buscador"></label>
+                <input type="text" name="buscar" id="buscar" size="80" class="cajaBuscar">
+            </form>
         </div>
         <div class="barraMenu">
-            BARRA MENU
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li>Género
+                    <ul class="dropdown">
+                        <li><a href="Terror.html">Terror</a></li>
+                        <li><a href="Comedia.html">Comedia</a></li>
+                        <li><a href="Drama.html">Drama</a></li>
+                        <li><a href="Romance.html">Romance</a></li>
+                    </ul>
+
+                </li>
+                <li>Mapa Web</li>
+                <li>Contáctanos
+                    <ul class="dropdown">
+                        <li><a href="#"><img src="img/X.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="img/facebook.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="img/youtube.png" alt="facebook"></a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
 
     </div>
 
     <div class="terror">
-        <h1>RESUMEN IMAGEN TERROR ENLACES</h1>
-        <img src="imagenes/logoTerror.png" alt="logoTerror">
+        <div class="resumen">
+            <h1>RESUMEN IMAGEN TERROR ENLACES</h1>
+        <img src="img/logoTerror.png" alt="logoTerror">
         <p>
             El cine de terror es un género cinematográfico que se caracteriza por su voluntad de provocar en el
             espectador sensaciones de pavor, terror, miedo, disgusto, repugnancia, horror, incomodidad o preocupación.
@@ -32,11 +55,19 @@
             En los cines de terror es donde se produce una sensación de miedo o temor sobre las distintas causas que
             genera un determinado personaje o actor.
         </p>
+        </div>
+        <div class="imgPeliculas">
+            <img src="img/peli_teVeo.png" alt="teVeo" class="img1">
+            <img src="img/peli_asesinoNudo.png" alt="asesinoNudo" class="img2">
+            <img src="img/peli_elResplandor.png" alt="resplandor" class="img3">
+           <!--  <img src="img/peli_Halloween.png" alt="halloween">
+            <img src="img/peli_psicosis.png" alt="psicosis"> -->
+        </div>
     </div>
 
     <div class="comedia">
         <h1>RESUMEN IMAGEN COMEDIA ENLACES</h1>
-        <img src="imagenes/cineComedia.png" alt="logoComedia">
+        <img src="img/cineComedia.png" alt="logoComedia">
         <p>
             Son películas que te hacen reír. Se caracterizan por ser alegres y diseñadas para divertir y provocar en el
             espectador una risa contagiosa que les lleve a evadirse del mundo real.
@@ -45,7 +76,7 @@
 
     <div class="drama">
         <h1>RESUEMN IMAGEN DRAMA ENLACES</h1>
-        <img src="imagenes/cineDrama.png" alt="logoDrama">
+        <img src="img/cineDrama.png" alt="logoDrama">
         <p>
             El cine dramático se basa principalmente en el conflicto entre diferentes protagonistas. Los escenarios son
             oscuros y los personajes algo serios. Se dice que es uno de los géneros cinematográficos más extenso y
@@ -54,7 +85,7 @@
     </div>
     <div class="romance">
         <h1>RESUEMN IMAGEN ROMANCE ENLACES</h1>
-        <img src="imagenes/logoRomance.png" alt="logoRomance">
+        <img src="img/logoRomance.png" alt="logoRomance">
         <p>
             El cine romántico es un género cinematográfico que se caracteriza por retratar argumentos construidos de
             eventos y personajes relacionados con la expresión del amor y las relaciones románticas. El cine romántico

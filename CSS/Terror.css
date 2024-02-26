@@ -30,30 +30,143 @@ body {
 }
 
 
-.item1 {grid-area: menu;}
+
+
+
+
+.barraMenu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.barraMenu >ul >li{
+  float: left;
+  display: block;
+  padding: 10px;
+  background-color: #333;
+  
+}
+
+.barraMenu >ul >li a{
+  color: white;
+  text-decoration: none;
+}
+
+.barraMenu >ul >li:hover{
+background-color: rgb(0, 0, 0);
+}
+
+.barraMenu >ul >li ul.dropdown li{
+  display: block;
+  padding: 18px 20px;
+}
+
+.barraMenu >ul >li ul.dropdown li:hover{
+  background-color: #2fa1fe;
+}
+
+
+.barraMenu >ul >li ul.dropdown{
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+.barraMenu >ul >li:hover ul.dropdown{
+  background-color: rgb(0, 0, 0);
+  display: block;
+  
+}
+
+
+
+
+
+
 .item2 {grid-area: indice;}
-.item3 {grid-area: contenido;}
-.item4 {grid-area: directores;}
-.item5 {grid-area: opiniones;}
+.item3 {grid-area: contenido1;}
+.item4 {grid-area: directores1;}
+.item5 {grid-area: opiniones1;}
+.item6 {grid-area: contenido2;}
+.item7 {grid-area: directores2;}
+.item8 {grid-area: opiniones2;}
+.item9 {grid-area: contenido3;}
+.item10 {grid-area: directores3;}
+.item11 {grid-area: opiniones3;}
 
 .vistaGrid {
     display: grid;
     grid-template-areas:
-      'menu menu menu menu menu menu menu'
-      'indice indice contenido contenido contenido directores directores'
-      'indice indice opiniones opiniones opiniones directores directores';
-
-    gap: 10px;
-    background-color: #2fa1fe;
-    padding: 10px;
+      'indice indice contenido1 contenido1 contenido1 directores1 directores1'
+      'indice indice opiniones1 opiniones1 opiniones1 directores1 directores1'
+      'indice indice contenido2 contenido2 contenido2 directores2 directores2'
+      'indice indice opiniones2 opiniones2 opiniones2 directores2 directores2'
+      'indice indice contenido3 contenido3 contenido3 directores3 directores3'
+      'indice indice opiniones3 opiniones3 opiniones3 directores3 directores3';
+    gap: 5px;
+    background-color: #333;
+    padding: 5px;
   }
 
 .vistaGrid > div {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    padding: 20px 0;
+    background-color: #111;
+    color: #fff;
+    padding: 30px;
     font-size: 30px;
 }
+
+.item3{
+  background: #000;
+}
+
+
+
+
+.vistaGrid h1{
+  font-size: 23px;
+}
+.vistaGrid h2{
+  font-size: 18px;
+}
+.vistaGrid p{
+  font-size: 13px;
+}
+input[type="submit"] {
+  color: #000;
+  background-color: #2fa1fe;
+}
+
+
+
+
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  
+}
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+ 
+}
+th {
+  font-size: 20px;
+  text-align: left;
+  padding-top: 40px;
+}
+
+
+td{
+  background-color: #2fa1fe;
+  font-size: 13px; 
+}
+
+
 
 .footer {
   background-color: #333;
@@ -64,3 +177,9 @@ body {
   bottom: 0;
   width: 100%;
 }
+
+
+
+
+
+

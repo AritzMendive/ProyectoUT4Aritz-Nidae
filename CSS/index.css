@@ -129,3 +129,25 @@ div.imgPeliculas{
     bottom: 0;
     width: 100%;
 }
+
+
+.item1 {grid-area: menu;}
+.vistaGrid {
+    display: grid;
+    grid-template-areas:
+      'menu menu menu menu';
+
+    background-color: black;
+  }
+
+.vistaGrid > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .vistaGrid > .item1 {
+    background-color: rgb(29, 29, 29);
+    color: rgb(25, 101, 241);
+    padding: 10px 0;
+  }

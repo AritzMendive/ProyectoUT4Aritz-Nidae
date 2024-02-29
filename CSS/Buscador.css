@@ -72,7 +72,7 @@ background-color: rgb(0, 0, 0);
     
 }
 .menuVertical {
-  width: 100%;
+  width: 99%;
 }
 
 .menuVertical a {
@@ -81,6 +81,11 @@ background-color: rgb(0, 0, 0);
   display: block;
   padding: 12px;
   text-decoration: none;
+  font-size: 18px;
+  border: 0.2px solid rgb(172, 172, 172);
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
 .menuVertical a:hover {
@@ -92,15 +97,27 @@ background-color: rgb(0, 0, 0);
   color: white;
 }
 
-input[type=text] {
+a > input[type=text] {
   width: 100%;
   border: none;
   font-size: 30px;
 }
 
-.resultados p{
+.resultados {
+  border: 1px solid rgb(158, 158, 158);
+  border-radius: 10px;
+  margin-left: 100px;
+  margin-bottom: 100px;
+  width: 850px;
+}
+
+
+.busqueda > p{
   display: block;
   float: right;
+  text-align: right;
+  padding: 20px;
+  font-size: 14px;
 }
 
 .resultados img{
@@ -112,6 +129,67 @@ input[type=text] {
   height: 80px;
   width: 50px;
 }
+
+.cajaBuscar{
+  background-color: #2fa1fe;
+}
+form{
+  display: block;
+}
+.dropdown > li img{
+  width: 25px;
+  height: 25px;
+}
+label img{
+  width: 5%;
+  height: 5%;
+}
+
+.resultado {
+  display: flex;
+  margin: 5px;
+
+}
+
+h1{
+  text-align: center;
+}
+
+.resultado h2{
+  font-size: 20px;
+  transition: font-size 0.3s ease;
+}
+
+.resultado:hover {
+  background-color: rgb(228, 226, 226);
+}
+
+.resultado:hover h2 {
+  font-size: 24px
+}
+
+.resultado .imagenResultados{
+  transition: 0.3s ease;
+}
+
+.resultado:hover .imagenResultados{
+  transform: scale(1.1);
+}
+
+.resultado a{
+  text-decoration: none;
+  color: black;
+}
+
+.infoPelicula {
+  text-align: left;
+}
+
+h1{
+  padding: 20px;
+}
+
+
 
 
 .item1 {grid-area: menu;}
@@ -129,8 +207,8 @@ input[type=text] {
 
 .vistaGrid > div {
     background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    font-size: 30px;
+
+
   }
 
   .vistaGrid > .item1 {
@@ -140,7 +218,7 @@ input[type=text] {
   }
 
   .vistaGrid > .item2 {
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(255, 255, 255);
 
   }
 

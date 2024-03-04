@@ -1,0 +1,296 @@
+/* GENERAL*/
+ 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* MENU */
+
+.menu {
+    background-color: rgb(68, 64, 64);;
+    color: white;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    width: 200px;
+    height: 100px;
+}
+ /* DIV PRINCIPAL */
+
+
+.primerDiv > .item1 {
+    background-color: black;
+    color: rgb(25, 101, 241);
+  }
+.buscador {
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+    size: 50px;
+}
+.cajaBuscar{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    padding-right: 5px;
+}
+input[type = "search"]:hover, input[type ="submit"]:hover{
+    border: 2px solid blue;
+    size: 50px;
+}
+
+.barraMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    font-size: x-large;
+}
+
+
+
+/* BARRA MENU */
+
+.barraMenu>ul>li a {
+    color: white;
+    text-decoration: none;
+}
+
+.barraMenu>ul>li:hover {
+    background-color: rgb(17, 7, 158);
+}
+
+.barraMenu>ul>li ul.dropdown li {
+    display: block;
+    padding: 18px 20px;
+}
+
+.barraMenu>ul>li ul.dropdown li:hover {
+    background-color: #d1596d;
+}
+
+
+.barraMenu>ul>li ul.dropdown {
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.barraMenu>ul>li:hover ul.dropdown {
+    display: block;
+    background-color: black;
+}
+.barraMenu>ul>li {
+    float: left;
+    padding: 10px;
+    display: block;
+    background-color: black;
+     
+
+}
+/*li:nth-child(odd){
+    background-color: #2fa1fe;
+}*/
+.genColores li:nth-child(even){
+    background-color: #716febd3;
+}
+ul.dropdown img{
+    width: 20px;
+}
+
+
+/* CONTENIDO PAGINA */
+
+.cuerpoPelis{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 80px;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 100px;
+
+}
+
+p{
+    padding: 50px;
+    text-align: justify;
+    font-size: x-large;
+    color: white;
+    box-shadow: 8px 8px 5px #854343;
+    border: 1px solid #854343;
+    padding: 8px 12px;
+}
+
+
+
+
+/* IMAGENES */
+
+.imgPeliculas1, .imgPeliculas2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 30%;
+    padding: 8px;
+}
+
+
+.img1,
+.img2,
+.img3, .img4 {
+   width: 250px;
+   padding: 10px;
+   box-sizing: border-box;
+   align-items: baseline;
+}
+
+.img1:hover,
+.img2:hover,
+.img3:hover, .img4:hover{
+    transition: 0.3s;
+    transform: scale(1.1);
+} 
+
+
+/* SECCIONES GENERO */
+
+h1{
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.terror,
+.comedia,
+.drama,
+.romance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.resumen1, .resumen2{
+    text-align: center;
+}
+
+
+.resumen1 img{
+   margin-bottom: 20px;
+}
+
+.resumen2 img{
+    margin-bottom: 20px;
+}
+
+
+
+
+/* FOOTER */
+.footer {
+    background-color: rgb(68, 64, 64);
+    color: white;
+    padding: 30px;
+    
+}
+.footerLista{
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.footerLista a{
+    display: inline;
+    margin-right: 20px;
+    color: white;  
+}
+.footerSpan{
+    text-align: center;
+}
+footer .logo img {
+    float: none;
+}
+
+/* MENU HAMBURGUESA */
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #3e8e41;}
+  
+
+
+
+/* MEDIA QUERIES */
+/* MOVIL*/
+
+@media only screen and (min-width:360px) and (max-width: 400px) {
+/* CONTENIDO PAGINA */
+.cuerpoPelis{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 80px;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 100px;
+
+}
+}
+/* TABLET*/
+
+@media screen and (min-width:768px) and (max-width: 1024px) {
+    
+}
+/*PANTALLAS DESKTOP*/
+
+@media screen and (min-width: 1024px) {
+    
+}

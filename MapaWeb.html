@@ -7,118 +7,285 @@
 </head>
 
 <body>
-    <div class="menu">
-        <div class="logo">
-            LOGO
-        </div>
-        <div class="buscador">
-            BUSCADOR
-        </div>
-        <div class="barraMenu">
-            BARRA MENU
-        </div>
-
-    </div>
     <div>
-        <h1>MAPA WEB</h1>
-        <div class="redesSociales">
-            Compartir en:
-            Facebook
-            Twitter
-            LinkedIn
+        <div class="menu">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo" />
+            </div>
+            <div class="buscador">
+                <form action="Buscador.html" method="get">
+                    <img src="img/buscar.png" alt="cajaBuscar" class="cajaBuscar">
+                    <input type="search" name="cajaBuscar" placeholder="Pelicula, autor, director...">
+                    <input type="submit" value="Buscar">
+                </form>
+            </div>
+            <nav class="barraMenu">
+                <ul>
+                    <li><a href="Index.html">Inicio</a></li>
+                    <li class="genColores">Género
+                        <ul class="dropdown">
+                            <li><a href="Terror.html">Terror</a></li>
+                            <li><a href="Comedia.html">Comedia</a></li>
+                            <li><a href="Drama.html">Drama</a></li>
+                            <li><a href="Romance.html">Romance</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="MapaWeb.html">Mapa Web</a></li>
+                    <li class="genColores">Contáctanos
+                        <ul class="dropdown">
+                            <li><a href="#"><img src="img/X.png" alt="twitter"></a></li>
+                            <li><a href="#"><img src="img/facebook.png" alt="facebook"></a></li>
+                            <li><a href="#"><img src="img/youtube.png" alt="facebook"></a></li>
+                            <li>
+                                <a href="#"><img src="img/linkedin.png" alt="LinkedIn"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
         </div>
-        <h2>Infromacion general</h2>
-        <ul>
-            <li> dfgsfhxf</li>
-            <li>adrgadfhzsdh</li>
-            <li>zdfhgh</li>
-        </ul>
-        <h2>Peliculas Terror</h2>
-        <ul>
-            <li>nombre pelicula1</li>
-            <li>nombre pelicula2</li>
-            <li>nombre pelicula3</li>
-        </ul>
-        <h2>Peliculas comedia</h2>
-        <ul>
-            <li>nombre pelicula1</li>
-            <li>nombre pelicula2</li>
-            <li>nombre pelicula3</li>
-        </ul>
-        <h2>Peliculas drama</h2>
-        <ul>
-            <li>nombre pelicula1</li>
-            <li>nombre pelicula2</li>
-            <li>nombre pelicula3</li>
-        </ul>
-        <h2>Peliculas romance</h2>
-        <ul>
-            <li>nombre pelicula1</li>
-            <li>nombre pelicula2</li>
-            <li>nombre pelicula3</li>
-        </ul>
-        <h2>Política de cookies</h2>
-        <p>
-            Servicios
-            El Punto de Acceso General, administracion.gob.es, informa acerca del uso de las cookies en sus páginas web.
 
-            Las cookies son archivos que se pueden descargar en su equipo a través de las páginas web. Son herramientas
-            que tienen un papel esencial para la prestación de numerosos servicios de la sociedad de la información.
-            Entre otros, permiten a una página web almacenar y recuperar información sobre los hábitos de navegación de
-            un usuario o de su equipo y, dependiendo de la información obtenida, se pueden utilizar para reconocer al
-            usuario y mejorar el servicio ofrecido.
+        <div class="cuerpo">
+            <h1 id="mapaWeb">MAPA WEB</h1>
+            <div id="redesSociales">
+                Compartir en:
+                <a href="https://www.facebook.com/?locale=es_ES">Facebook</a>
+                <a href="https://twitter.com/?lang=es">Twitter/X</a>
+                <a href="https://es.linkedin.com/">LinkedIn</a>
+                <a href="https://www.youtube.com/">YouTube</a>
+            </div>
+            <div>
+                <h2>Peliculas Terror</h2>
+                <ul>
+                    <li><a href="Terror.html">Te veo</a></li>
+                    <li><a href="Terror.html">Al lado de un Asesino</a> </li>
+                    <li><a href="Terror.html">El Resplandor</a></li>
+                    <li><a href="Terror.html">Annabelle</a></li>
+                </ul>
+                <h2>Peliculas comedia</h2>
+                <ul>
+                    <li><a href="Comedia.html">El Dictador</a></li>
+                    <li><a href="Comedia.html">Los Tres Chiflados</a></li>
+                    <li><a href="Comedia.html">Padre no hay Mas que Uno</a></li>
+                    <li><a href="Comedia.html">Torrente 1</a></li>
+                </ul>
+                <h2>Peliculas drama</h2>
+                <ul>
+                    <li><a href="Drama.html">Los Asesinos de la Luna</a></li>
+                    <li><a href="Drama.html">The Prestige</a></li>
+                    <li><a href="Drama.html">Vidas Pasadas</a></li>
+                    <li><a href="Drama.html">Blackbird (La decision)</a></li>
+                </ul>
+                <h2>Peliculas romance</h2>
+                <ul>
+                    <li><a href="Romance.html">Love Story</a></li>
+                    <li><a href="Romance.html">Perdona si te llamo Amor</a></li>
+                    <li><a href="Romance.html">Romeo y Julieta</a></li>
+                    <li><a href="Romance.html">La Ultima Carta de Amor </a></li>
+                </ul>
+                <h2>Aviso Legal</h2>
+                <ul>
+                    <li><a href="#avisoLegal" >Aviso Legal</a></li>
+                    <li><a href="#politicasCookies">Política de cookies</a></li>
+                    <li><a href="#politicaPrivacidad">Política de Privacidad de Ena Films</a></li>
+                </ul>
 
-            Tipos de cookies
-            Según quien sea la entidad que gestione el dominio desde donde se envían las cookies y trate los datos que
-            se obtengan se pueden distinguir dos tipos: cookies propias y cookies de terceros.
 
-            Existe también una segunda clasificación según el plazo de tiempo que permanecen almacenadas en el navegador
-            del cliente, pudiendo tratarse de cookies de sesión o cookies persistentes.
+                <h2 id="avisoLegal">AVISO LEGAL</h2>
+                <p>
+                    ¡Bienvenido a nuestra página web sobre películas de
+                    cine!
+                    Nuestra página web está dedicada a ofrecerte información
+                    y recursos relacionados con el apasionante mundo del
+                    cine. Desde reseñas de películas hasta noticias de la
+                    industria cinematográfica, aquí encontrarás todo lo que
+                    necesitas para mantenerte actualizado y entretenido.
+                </p>
+                <p>
+                    Nuestra página web está organizada en varias secciones
+                    principales, que incluyen reseñas de películas, noticias
+                    y actualizaciones de la industria cinematográfica,
+                    listas de películas recomendadas, entrevistas con
+                    cineastas y actores, y una sección interactiva donde
+                    puedes compartir tus propias opiniones y
+                    recomendaciones.
+                </p>
+                <p>
+                    Para cualquier consulta o comentario, no dudes en
+                    ponerte en contacto con nosotros a través de nuestro
+                    correo electrónico <a href="#">contacto@paginadecineEnaFilms.com</a> o
+                    llamándonos al +34123456789.
+                </p>
+                <p>
+                    Ena Films es un sitio web dedicado al mundo del cine, propiedad de Ena Productions con sede en
+                    Calle Milagro, s/n, 31015, Pamplona, Navarra, España. <br>
 
-            Por último, existe otra clasificación con cinco tipos de cookies según la finalidad para la que se traten
-            los datos obtenidos: cookies técnicas, cookies de personalización, cookies de análisis, cookies
-            publicitarias y cookies de publicidad comportamental.
+                    El acceso y uso de este sitio web están sujetos a las siguientes condiciones: <br>
 
-            Para más información a este respecto puedes consultar la Guía sobre el uso de las cookies de la Agencia
-            Española de Protección de Datos.
+                    Aceptación de las condiciones: El acceso y uso de Ena Films implican la aceptación plena y sin
+                    reservas de todas las disposiciones incluidas en este aviso legal. <br>
 
-            Cookies utilizadas en el portal web
-            A continuación se identifican las cookies que están siendo utilizadas en este portal así como su tipología y
-            función:
+                    Propiedad intelectual e industrial: Todos los contenidos de Ena Films, incluyendo textos, imágenes,
+                    logotipos, diseño gráfico, código fuente, y cualquier otro elemento, son propiedad de Ena
+                    Productions o de terceros que han autorizado su uso. Están protegidos por las leyes de propiedad
+                    intelectual e industrial. Queda prohibida cualquier reproducción, distribución, comunicación pública
+                    o transformación de los mencionados elementos sin la autorización expresa de Ena Productions. <br>
 
-            La página web administracion.gob.es utiliza Google Analytics, un servicio de analítica web desarrollada por
-            Google, que permite la medición y análisis de la navegación en las páginas web. En su navegador podrá
-            observar 4 cookies de este servicio. Según la tipología anterior, se trata de cookies propias, de sesión y
-            de análisis. Puede encontrar más información al respecto e inhabilitar el uso de estas cookies en:
-            www.google.es/intl/es/analytics/privacyoverview.html.
+                    Uso del sitio web: El usuario se compromete a utilizar Ena Films de acuerdo con la ley, la moral,
+                    las buenas costumbres y el presente aviso legal. Se compromete también a hacer un uso adecuado de
+                    los contenidos y servicios ofrecidos y a no emplearlos para incurrir en actividades ilícitas o
+                    contrarias a la buena fe y al orden público. <br>
 
-            A través de la analítica web se obtiene información relativa al número de usuarios que acceden a la web, el
-            número de páginas vistas, la frecuencia y repetición de las visitas, su duración, el navegador utilizado, el
-            operador que presta el servicio, el idioma, el terminal que utiliza, o la ciudad a la que está asignada su
-            dirección IP. Información que posibilita un mejor y más apropiado servicio por parte de este portal.
-        </p>
-        <h2> Política de Privacidad</h2>
-        <p>
-            Política de privacidad del Punto de Acceso General electrónico (PAGe-060)
-            A través del Punto de Acceso General electrónico no se recogen datos personales sin consentimiento.
+                    Enlaces externos: Ena Films puede incluir enlaces a sitios web de terceros. Ena Productions no se
+                    hace responsable del contenido de dichos sitios web ni de las consecuencias que pudieran derivarse
+                    del acceso a ellos. La inclusión de estos enlaces en Ena Films tiene un propósito informativo y no
+                    implica respaldo, patrocinio o recomendación de los mismos por parte de Ena Productions. <br>
 
-            En ningún caso los referidos datos serán objeto de tratamiento o de cesión a terceros, si no es con el
-            consentimiento inequívoco del afectado.
+                    Modificaciones: Ena Productions se reserva el derecho de modificar, actualizar o eliminar en
+                    cualquier momento y sin previo aviso la información contenida en Ena Films, así como la
+                    configuración o presentación del sitio web. <br>
 
-            Esta política de privacidad es de aplicación a las páginas de este portal web, no se garantiza en los
-            accesos a través de enlaces con este sitio, ni a los enlaces desde este sitio con otras webs.
-        </p>
+                    Responsabilidad: Ena Productions no se hace responsable de los posibles errores u omisiones en los
+                    contenidos de Ena Films ni de los daños derivados de la utilización de la información proporcionada
+                    en el sitio web. <br>
+
+                    Legislación aplicable y jurisdicción: Este aviso legal se rige por la legislación [indicar la
+                    legislación aplicable]. Cualquier controversia que pudiera derivarse de la interpretación o
+                    cumplimiento de este aviso legal será sometida a los tribunales competentes de [indicar la
+                    jurisdicción]. <br>
+
+                    El usuario, mediante el uso de Ena Films, acepta expresamente todas las disposiciones establecidas
+                    en este aviso legal. <br>
+
+                    Fecha de la última actualización: 04/03/2024.
+                </p>
+                <h2 id="politicasCookies">Política de cookies</h2>
+                <span>
+                    Cookies en Ena Films:
+                </span>
+                <p>
+                    En Ena Films utilizamos cookies para mejorar tu experiencia en nuestro sitio web y para proporcionar
+                    ciertas funcionalidades.
+                </p>
+                <span>
+                    Tipos de cookies que utilizamos:
+                </span>
+                <p>
+                    <strong>Cookies esenciales:</strong> <br> Estas cookies son necesarias para el funcionamiento básico
+                    de nuestro sitio web.
+                    Nos ayudan a garantizar que el sitio funcione correctamente y que puedas navegar y utilizar las
+                    funciones de manera efectiva.
+
+                    <strong>Cookies de rendimiento:</strong> <br> Utilizamos cookies de rendimiento para recopilar
+                    información anónima sobre
+                    cómo los visitantes interactúan con nuestro sitio. Esto nos ayuda a entender qué áreas del sitio son
+                    más populares y a mejorar la experiencia del usuario. <br>
+
+                    <strong>Cookies de funcionalidad:</strong> <br> Estas cookies nos permiten recordar tus preferencias
+                    y elecciones, como tu
+                    idioma preferido o la región en la que te encuentras. Esto nos ayuda a personalizar tu experiencia
+                    en Ena Films. <br>
+
+                    <strong>Cookies de publicidad:</strong> <br> Podemos utilizar cookies de terceros para mostrar
+                    anuncios relevantes en Ena
+                    Films y en otros sitios web que visites. Estas cookies recopilan información sobre tus hábitos de
+                    navegación para mostrarte publicidad que pueda ser de tu interés. <br>
+
+                </p>
+                <span>
+                    Control de cookies:
+                </span>
+                <p>
+                    Puedes controlar y administrar las cookies en cualquier momento a través de la configuración de tu
+                    navegador. Sin embargo, ten en cuenta que deshabilitar ciertas cookies puede afectar la
+                    funcionalidad de nuestro sitio web y limitar tu experiencia de usuario.
+
+                    Al utilizar Ena Films, aceptas el uso de cookies de acuerdo con esta política. Si tienes alguna
+                    pregunta sobre nuestras prácticas de cookies, no dudes en ponerte en contacto con nosotros a través
+                    de <a href="#">contacto@paginadecineEnaFilms.com</a>. <br>
+
+                    Gracias por visitar Ena Films y disfrutar del mundo del cine con nosotros.
+                </p>
+
+                <h2 id="politicaPrivacidad"> Política de Privacidad de Ena Films</h2>
+                <p>
+                    
+                    En Ena Films, la privacidad de nuestros visitantes es de suma importancia para nosotros. Esta
+                    política de privacidad describe los tipos de información personal que recibimos y recopilamos cuando
+                    visitas Ena Films, así como cómo utilizamos, compartimos y protegemos esa información. <br>
+
+                    <b><i>Información que recopilamos:</i></b> <br>
+                    <b>Información personal:</b> Podemos recopilar información personal, como tu nombre, dirección de correo
+                    electrónico y preferencias de contenido, cuando te suscribes a nuestro boletín de noticias o
+                    participas en concursos y promociones. <br>
+
+                    <b>Información de uso:</b> Recopilamos información sobre cómo interactúas con nuestro sitio web, como las
+                    páginas que visitas, la duración de tu visita y las acciones que realizas mientras estás en Ena
+                    Films. Esta información nos ayuda a mejorar la experiencia del usuario y a ofrecer contenido
+                    relevante. <br>
+
+                    <b><i>Uso de la información:</i></b> <br>
+                    Utilizamos la información personal que recopilamos para proporcionarte los servicios solicitados,
+                    como enviar boletines informativos y procesar participaciones en concursos y promociones.
+
+                    La información de uso nos ayuda a comprender mejor cómo se utiliza nuestro sitio web y a mejorar su
+                    funcionalidad y contenido. <br>
+
+                    <b><i>Compartir información:</i></b> <br>
+                    No vendemos, alquilamos ni compartimos tu información personal con terceros, excepto cuando sea
+                    necesario para cumplir con la ley, proteger nuestros derechos o responder a procesos legales. <br>
+
+                    <b><i>Cookies y tecnologías similares:</i></b>
+                    Utilizamos cookies y tecnologías similares para mejorar la funcionalidad de nuestro sitio web y
+                    personalizar tu experiencia de usuario. Puedes controlar el uso de cookies a través de la
+                    configuración de tu navegador. <br>
+                    <b><i>Seguridad de la información:</i></b>
+                    Implementamos medidas de seguridad para proteger tu información personal contra accesos no
+                    autorizados, uso indebido o divulgación. <br>
+
+                    <b><i>Cambios en la política de privacidad:</i></b>
+                    Nos reservamos el derecho de actualizar o modificar nuestra política de privacidad en cualquier
+                    momento. Te recomendamos revisar esta página periódicamente para estar al tanto de cualquier cambio. <br>
+                    <b><i>Contacto:</i></b>
+                    Si tienes preguntas o inquietudes sobre nuestra política de privacidad, no dudes en ponerte en
+                    contacto con nosotros a través de <a href="#">contacto@paginadecineEnaFilms.com</a> o
+                    llamándonos al +34123456789... <br>
+                    Al utilizar Ena Films, aceptas los términos de nuestra política de privacidad. <br>
+
+                    Fecha de la última actualización: 04/03/2024.
+                </p>
+            </div>
+        </div>
     </div>
 
+    <div>
+        <footer class="footer">
+            <div class="footerLista">
+                <a href="Index.html">Inicio |</a>
 
+                <a href="MapaWeb.html">Mapa Web |</a>
 
+                <a href="#avisoLegal">Aviso Legal |</a>
 
+                <a href="#politicaPrivacidad">Política de Privacidad |</a>
 
+                <a href="#politicasCookies">Política de cookies |</a>
 
-    <div class="footer">
-        FOOTER, AVISO LEGAL, MAPA WEB: https://administracion.gob.es/pag_Home/mapaWeb.html
+                <a href="#redesSociales">Redes Sociales </a>
+            </div>
+            <div class="footerSpan">
+                <span>
+                    2023-2024 | ENA FILMS es una página de recomendación de películas y series, y es un medio totalmente
+                    independiente cuya principal prioridad es la privacidad y seguridad de los datos de sus
+                    usuarios.
+                    All Rights Reserved - Todos los derechos reservados
+                </span>
+            </div>
     </div>
-
+    </footer>
+    </div>
 </body>
 
 </html>

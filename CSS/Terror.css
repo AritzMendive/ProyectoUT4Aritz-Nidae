@@ -207,7 +207,6 @@ label img{
   position: fixed;
   top: 80px;
   left: 10px; 
-  background-color: #111;
   z-index: 999;
 }
 #Indice >ul >li{

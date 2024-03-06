@@ -308,6 +308,9 @@ footer .logo img {
 /* MOVIL*/
 
 @media only screen and (min-width:360px) and (max-width: 600px) {
+    .menu{
+        display: none;
+    }
     
     .menu-hamburguesa {
         display: block;
@@ -428,13 +431,6 @@ footer .logo img {
     margin-bottom: 20px;
 }
 
-.item1 {
-
-    height: 20%;
-    position: absolute;
-    width: 100%;
-    display: none;
-}
 
 .footer {
     text-align: center;

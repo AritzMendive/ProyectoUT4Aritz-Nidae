@@ -268,6 +268,10 @@ footer .logo img {
 /* MEDIA QUERYS */
 /* MOVIL */
 @media only screen and (max-width: 600px) {
+    .menu{
+        display: none;
+    }
+
     .hamburger-menu {
         display: block;
     }

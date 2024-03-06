@@ -5,7 +5,8 @@ body {
 }
 
 .menu {
-  background-color: rgb(68, 64, 64);;
+  background-color: rgb(68, 64, 64);
+  ;
   color: white;
   padding: 0;
   display: flex;
@@ -13,31 +14,36 @@ body {
   align-items: center;
 }
 
-.logo img{
+.logo img {
   width: 200px;
   height: 100px;
 }
+
 /* DIV PRINCIPAL */
 
 
-.primerDiv > .item1 {
+.primerDiv>.item1 {
   background-color: black;
   color: rgb(25, 101, 241);
 }
+
 .buscador {
   flex-grow: 1;
   text-align: center;
   position: relative;
   size: 50px;
 }
-.cajaBuscar{
+
+.cajaBuscar {
   position: relative;
   top: 10px;
   left: 10px;
   width: 40px;
   padding-right: 5px;
 }
-input[type = "search"]:hover, input[type ="submit"]:hover{
+
+input[type="search"]:hover,
+input[type="submit"]:hover {
   border: 2px solid blue;
   size: 50px;
 }
@@ -60,7 +66,7 @@ input[type = "search"]:hover, input[type ="submit"]:hover{
 }
 
 .barraMenu>ul>li:hover {
-  background-color: rgb(17, 7, 158);
+  background-color: rgba(40, 27, 209, 0.726);
 }
 
 .barraMenu>ul>li ul.dropdown li {
@@ -83,12 +89,13 @@ input[type = "search"]:hover, input[type ="submit"]:hover{
   display: block;
   background-color: black;
 }
+
 .barraMenu>ul>li {
   float: left;
   padding: 10px;
   display: block;
   background-color: black;
-   
+
 
 }
 
@@ -114,11 +121,11 @@ input[type = "search"]:hover, input[type ="submit"]:hover{
   background-color: #ccc;
 }
 
-.menuVertical a:nth-child(even){
+.menuVertical a:nth-child(even) {
   background-color: #2fa1fe6b;
 }
 
-a > input[type=text] {
+a>input[type=text] {
   width: 100%;
   border: none;
   font-size: 30px;
@@ -133,7 +140,7 @@ a > input[type=text] {
 }
 
 
-.busqueda > p{
+.busqueda>p {
   display: block;
   float: right;
   text-align: right;
@@ -141,24 +148,26 @@ a > input[type=text] {
   font-size: 14px;
 }
 
-.resultados img{
+.resultados img {
   display: block;
   padding: 20px;
 }
 
-#logo{
+#logo {
   height: 80px;
   width: 50px;
 }
 
-form{
+form {
   display: block;
 }
-.dropdown > li img{
+
+.dropdown>li img {
   width: 25px;
   height: 25px;
 }
-label img{
+
+label img {
   width: 5%;
   height: 5%;
 }
@@ -169,16 +178,16 @@ label img{
 
 }
 
-.genColores li:nth-child(even){
+.genColores li:nth-child(even) {
   background-color: #716febd3;
 }
 
 
-h1{
+h1 {
   text-align: center;
 }
 
-.resultado h2{
+.resultado h2 {
   font-size: 20px;
   transition: font-size 0.3s ease;
 }
@@ -191,15 +200,15 @@ h1{
   font-size: 24px
 }
 
-.resultado .imagenResultados{
+.resultado .imagenResultados {
   transition: 0.3s ease;
 }
 
-.resultado:hover .imagenResultados{
+.resultado:hover .imagenResultados {
   transform: scale(1.1);
 }
 
-.resultado a{
+.resultado a {
   text-decoration: none;
   color: black;
 }
@@ -208,7 +217,7 @@ h1{
   text-align: left;
 }
 
-h1{
+h1 {
   padding: 20px;
 }
 
@@ -217,137 +226,150 @@ h1{
 
 
 
-.item1 {grid-area: menu;}
-.item2 {grid-area: busqueda;}
-.item3 {grid-area: resultados;}
+.item1 {
+  grid-area: menu;
+}
+
+.item2 {
+  grid-area: busqueda;
+}
+
+.item3 {
+  grid-area: resultados;
+}
 
 .vistaGrid {
-    display: grid;
+  display: grid;
+  grid-template-areas:
+    'menu menu menu menu'
+    'busqueda resultados resultados resultados';
+
+  background-color: black;
+}
+
+.vistaGrid>div {
+  background-color: rgba(255, 255, 255, 0.8);
+
+
+}
+
+.vistaGrid>.item1 {
+  background-color: rgb(29, 29, 29);
+  color: rgb(25, 101, 241);
+  padding: 10px 0;
+}
+
+.vistaGrid>.item2 {
+  background-color: rgb(255, 255, 255);
+
+}
+
+.vistaGrid>.item3 {
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+.footer {
+  background-color: rgb(68, 64, 64);
+  color: white;
+  padding: 30px;
+
+}
+
+.footerLista {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.footerLista a {
+  display: inline;
+  margin-right: 20px;
+  color: white;
+}
+
+.footerSpan {
+  text-align: center;
+}
+
+footer .logo img {
+  float: none;
+  text-align: center;
+  position: relative;
+  left: 45%;
+}
+
+#imagenHamburguesa {
+  display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .vistaGrid {
     grid-template-areas:
       'menu menu menu menu'
-      'busqueda resultados resultados resultados';
-
-    background-color: black;
+      'resultados resultados resultados resultados'
+      'busqueda busqueda busqueda busqueda';
   }
 
-.vistaGrid > div {
-    background-color: rgba(255, 255, 255, 0.8);
-
-
+  .vistaGrid>.item2 {
+    grid-area: busqueda;
   }
 
-  .vistaGrid > .item1 {
-    background-color: rgb(29, 29, 29);
-    color: rgb(25, 101, 241);
-    padding: 10px 0;
+  h1 {
+    text-align: left;
+    margin-left: 40px;
   }
 
-  .vistaGrid > .item2 {
-    background-color: rgb(255, 255, 255);
-
+  .vistaGrid>.item3 {
+    grid-area: resultados;
   }
 
-  .vistaGrid > .item3 {
-    background-color: rgb(255, 255, 255);
+  .vistaGrid>.item3 .busqueda {
+    margin-top: 20px;
   }
 
 
 
-  .footer {
-    background-color: rgb(68, 64, 64);
-    color: white;
-    padding: 30px;
-    
-  }
-  .footerLista{
+  .busqueda {
     margin: 0;
-    padding: 20px;
-    text-align: center;
-    color: white;
   }
-  .footerLista a{
-    display: inline;
-    margin-right: 20px;
-    color: white;  
+
+  .menuVertical {
+    width: 480px;
   }
-  .footerSpan{
-    text-align: center;
-  }
-  footer .logo img {
-    float: none;
-    text-align: center;
-    position: relative;
-    left: 45%;}
-  
-  #imagenHamburguesa{
-    display: none;
+
+  .resultados {
+    width: 470px;
+    margin-left: 10px;
   }
 
 
-  @media only screen and (max-width: 600px) {
-  
-    .vistaGrid {
-      grid-template-areas:
-        'menu menu menu menu'
-        'resultados resultados resultados resultados'
-        'busqueda busqueda busqueda busqueda';
-    }
-  
-    .vistaGrid > .item2 {
-      grid-area: busqueda;
-    }
-
-    h1 {
-      text-align: left;
-      margin-left: 40px;
-    }
-
-    .vistaGrid > .item3 {
-      grid-area: resultados;
-    }
-  
-    .vistaGrid > .item3 .busqueda {
-      margin-top: 20px;
-    }
-
-
-
-    .busqueda{
-      margin: 0;
-    }
-
-    .menuVertical{
-      width: 480px;
-    }
-
-    .resultados{
-      width: 470px;
-      margin-left: 10px;
-    }
-
-    
-  .item1{
+  .item1 {
     height: 100%;
     position: absolute;
     width: 100%;
     display: none;
   }
-  
+
   .menu {
     flex-direction: column;
-    align-items: flex-start; 
+    align-items: flex-start;
   }
-  
-  .menu > .barraMenu {
-    width: 100%; 
-    text-align: left; 
+
+  .menu>.barraMenu {
+    width: 100%;
+    text-align: left;
   }
-  
-  .menu > .barraMenu > ul {
-    padding-left: 0; 
+
+  .menu>.barraMenu>ul {
+    padding-left: 0;
   }
-  
-  .menu > .barraMenu > ul > li {
+
+  .menu>.barraMenu>ul>li {
     float: none;
     display: block;
     text-align: left;
@@ -355,85 +377,79 @@ h1{
     font-size: 30px;
   }
 
-  .menu > .buscador {
+  .menu>.buscador {
     display: none;
   }
 
-  #imagenHamburguesa{
+  #imagenHamburguesa {
     float: left;
     display: block;
     z-index: 999;
   }
 
-  
-  h1{
+
+  h1 {
     margin-top: 50px;
   }
-    
 
+}
 
-  
-    
+@media only screen and (max-width: 1024px) {
+  .vistaGrid {
+    grid-template-areas:
+      'menu'
+      'resultados'
+      'busqueda';
   }
-  
-  @media only screen and (max-width: 1024px) {
-    .vistaGrid {
-      grid-template-areas:
-        'menu'
-        'resultados'
-        'busqueda';
-    }
-  
-    .menuVertical {
-      display: block;
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-  
-    .menu {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .menu > .barraMenu {
-      width: 100%;
-      text-align: center;
-    }
-  
-    .menu > .barraMenu > ul > li {
-      margin: 50px;
-      font-size: 30px;
-    }
-  
-    .menu > .barraMenu > ul {
-      padding-left: 0;
-    }
-  
-    .menu > .buscador {
-      display: none;
-    }
-  
-    #imagenHamburguesa {
-      display: block;
-      margin-bottom: 20px;
-    }
-  
-    .resultados{
-      width: 90%;
-      margin-left: 20px;
-    }
 
-    .item1 {
-
-      height: 20%;
-      position: absolute;
-      width: 100%;
-      display: none;
-    }
-  
-    .footer {
-      text-align: center;
-    }
+  .menuVertical {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-  
-  
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu>.barraMenu {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu>.barraMenu>ul>li {
+    margin: 50px;
+    font-size: 30px;
+  }
+
+  .menu>.barraMenu>ul {
+    padding-left: 0;
+  }
+
+  .menu>.buscador {
+    display: none;
+  }
+
+  #imagenHamburguesa {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .resultados {
+    width: 90%;
+    margin-left: 20px;
+  }
+
+  .item1 {
+
+    height: 20%;
+    position: absolute;
+    width: 100%;
+    display: none;
+  }
+
+  .footer {
+    text-align: center;
+  }
+}

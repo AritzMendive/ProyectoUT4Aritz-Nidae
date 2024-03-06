@@ -1,41 +1,56 @@
 /* GENERAL*/
- 
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
+
 }
 
 /* MENU */
 
 .menu {
-    background-color: black;
+    background-color: rgb(68, 64, 64);
     color: white;
-    padding: 10px;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo img{
+.logo img {
     width: 200px;
     height: 100px;
 }
+.hamburger-menu {
+    display: none;
+}
+
+/* DIV PRINCIPAL */
+
+
+.primerDiv>.item1 {
+    background-color: black;
+    color: rgb(25, 101, 241);
+}
+
 .buscador {
     flex-grow: 1;
     text-align: center;
     position: relative;
     size: 50px;
 }
-.cajaBuscar{
+
+.cajaBuscar {
     position: relative;
     top: 10px;
     left: 10px;
     width: 40px;
     padding-right: 5px;
 }
-input[type = "search"]:hover, input[type ="submit"]:hover{
+
+input[type="search"]:hover,
+input[type="submit"]:hover {
     border: 2px solid blue;
     size: 50px;
 }
@@ -58,7 +73,7 @@ input[type = "search"]:hover, input[type ="submit"]:hover{
 }
 
 .barraMenu>ul>li:hover {
-    background-color: rgb(17, 7, 158);
+    background-color: rgba(40, 27, 209, 0.726);
 }
 
 .barraMenu>ul>li ul.dropdown li {
@@ -81,33 +96,44 @@ input[type = "search"]:hover, input[type ="submit"]:hover{
     display: block;
     background-color: black;
 }
+
 .barraMenu>ul>li {
     float: left;
     padding: 10px;
     display: block;
     background-color: black;
-     
+
 
 }
-/*li:nth-child(odd){
-    background-color: #2fa1fe;
-}*/
-.genColores li:nth-child(even){
-    background-color: #7e2ffed3;
+.barraMenu>ul>li a.active{
+    background-color: rgba(41, 32, 160, 0.767);
 }
-ul.dropdown img{
+
+.genColores li:nth-child(even) {
+    background-color: #716febd3;
+}
+
+ul.dropdown img {
     width: 20px;
+}
+
+img {
+    width: 30%;
+    padding: 8px;
 }
 
 /* CONTENIDO CUERPO*/
 .cuerpo{
-    background-color: rgba(141, 141, 5, 0.274);
-    color: rgb(25, 101, 241);
+    background-color: black;
+    color: rgba(103, 155, 250, 0.678);
     padding: 60px 100px;
     text-align: justify;
+    line-height: 1.8;
 }
 p{
-    color: black;
+    text-align: justify;
+    font-size: large;
+    color: white;
     line-height: 1.8;
 }
 h2{
@@ -115,35 +141,177 @@ h2{
 }
 
 
-
 /* FOOTER */
+
 .footer {
-    background-color: black;
-    color: #0fdd3c;
+    background-color: rgb(68, 64, 64);
+    color: white;
     padding: 30px;
-    
+
 }
-.footerLista{
+
+.footerLista {
     margin: 0;
     padding: 20px;
     text-align: center;
     color: white;
 }
-.footerLista a{
+
+.footerLista a {
     display: inline;
-    margin-right: 20px;   
+    margin-right: 20px;
+    color: white;
 }
-.footerSpan{
+
+.footerSpan {
     text-align: center;
 }
 
-/* MEDIA QUERIES */
-@media screen and (max-width: 576px) {
-    
+footer .logo img {
+    float: none;
+    text-align: center;
+    position: relative;
+    left: 45%;
 }
-@media screen and (min-width:577px) and (max-width: 1024px) {
-    
+
+#imagenHamburguesa {
+    display: none;
 }
-@media screen and (min-width: 1025px) {
+
+/* MEDIA QUERYS */
+
+/* MOVIL*/
+
+@media only screen and (min-width:360px) and (max-width: 600px) {
     
+    .menu-hamburguesa {
+        display: block;
+    }
+
+    .barraMenu ul {
+        display: none;
+    }
+
+    .barraMenu ul.open {
+        display: block;
+    }
+
+    h1 {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu > .barraMenu {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu > .barraMenu > ul {
+        padding-left: 0;
+    }
+
+    .menu > .barraMenu > ul > li {
+        float: none;
+        display: block;
+        text-align: center;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+    .menu > .buscador {
+        display: none;
+    }
+
+    #imagenHamburguesa {
+        float: none;
+        display: block;
+        text-align: center;
+        margin: 20px 0;
+        z-index: 999;
+    }
+
+    h1 {
+        margin-top: 20px;
+    }
+
+    .cuerpoPelis {
+        display: block;
+        padding: 10px;
+    }
+
+    .imgPeliculas1,
+    .imgPeliculas2 {
+        display: block;
+    }
+
+    img {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .img1,
+    .img2,
+    .img3,
+    .img4 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    footer .logo img {
+        float: none;
+        text-align: center;
+        position: relative;
+        left: 45%;
+    }
+
+}
+
+/* TABLET*/
+
+@media screen and (min-width:768px) and (max-width: 1024px) {
+
+.menu {
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu>.barraMenu {
+    width: 100%;
+    text-align: center;
+}
+
+.menu>.barraMenu>ul>li {
+    margin: 50px;
+    font-size: 30px;
+}
+
+.menu>.barraMenu>ul {
+    padding-left: 0;
+}
+
+.menu>.buscador {
+    display: none;
+}
+
+#imagenHamburguesa {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.item1 {
+
+    height: 20%;
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+
+.footer {
+    text-align: center;
+}
 }

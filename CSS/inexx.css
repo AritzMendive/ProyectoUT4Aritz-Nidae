@@ -1,14 +1,11 @@
-/* GENERAL*/
-
+* GENERAL */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-
 }
 
 /* MENU */
-
 .menu {
     background-color: rgb(68, 64, 64);
     color: white;
@@ -28,8 +25,6 @@ body {
 }
 
 /* DIV PRINCIPAL */
-
-
 .primerDiv>.item1 {
     background-color: black;
     color: rgb(25, 101, 241);
@@ -64,10 +59,7 @@ input[type="submit"]:hover {
     font-size: x-large;
 }
 
-
-
 /* BARRA MENU */
-
 .barraMenu>ul>li a {
     color: white;
     text-decoration: none;
@@ -86,7 +78,6 @@ input[type="submit"]:hover {
     background-color: #d1596d;
 }
 
-
 .barraMenu>ul>li ul.dropdown {
     position: absolute;
     z-index: 999;
@@ -103,8 +94,6 @@ input[type="submit"]:hover {
     padding: 10px;
     display: block;
     background-color: black;
-
-
 }
 
 .barraMenu>ul>li a.active {
@@ -119,9 +108,7 @@ ul.dropdown img {
     width: 20px;
 }
 
-
 /* CONTENIDO PAGINA */
-
 .cuerpoPelis {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -131,7 +118,6 @@ ul.dropdown img {
     justify-content: space-evenly;
     align-items: center;
     padding: 10px 100px;
-
 }
 
 p {
@@ -144,11 +130,7 @@ p {
     padding: 8px 12px;
 }
 
-
-
-
 /* IMAGENES */
-
 .imgPeliculas1,
 .imgPeliculas2 {
     display: flex;
@@ -159,7 +141,6 @@ img {
     width: 30%;
     padding: 8px;
 }
-
 
 .img1,
 .img2,
@@ -179,9 +160,7 @@ img {
     transform: scale(1.1);
 }
 
-
 /* SECCIONES GENERO */
-
 h1 {
     font-size: xx-large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -204,7 +183,6 @@ h1 {
     text-align: center;
 }
 
-
 .resumen1 img {
     margin-bottom: 20px;
 }
@@ -213,16 +191,11 @@ h1 {
     margin-bottom: 20px;
 }
 
-
-
-
 /* FOOTER */
-
 .footer {
     background-color: rgb(68, 64, 64);
     color: white;
     padding: 30px;
-
 }
 
 .footerLista {
@@ -249,12 +222,7 @@ footer .logo img {
     left: 45%;
 }
 
-#imagenHamburguesa {
-    display: none;
-}
-
 /* MENU HAMBURGUESA */
-
 .dropbtn {
     background-color: #4CAF50;
     color: white;
@@ -297,19 +265,10 @@ footer .logo img {
     background-color: #3e8e41;
 }
 
-
-
-
-
-
-
 /* MEDIA QUERYS */
-
-/* MOVIL*/
-
-@media only screen and (min-width:360px) and (max-width: 600px) {
-    
-    .menu-hamburguesa {
+/* MOVIL */
+@media only screen and (max-width: 600px) {
+    .hamburger-menu {
         display: block;
     }
 
@@ -319,11 +278,6 @@ footer .logo img {
 
     .barraMenu ul.open {
         display: block;
-    }
-
-    h1 {
-        text-align: center;
-        margin-left: 0;
     }
 
     .menu {
@@ -352,91 +306,39 @@ footer .logo img {
         display: none;
     }
 
-    #imagenHamburguesa {
-        float: none;
+    #menu-hamburguesa {
+        display: none;
+    }
+
+    .hamburger-menu {
         display: block;
-        text-align: center;
-        margin: 20px 0;
-        z-index: 999;
+        text-align: right;
+        margin: 10px;
     }
 
-    h1 {
-        margin-top: 20px;
+    .hamburger-icon {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 6px 0;
     }
 
-    .cuerpoPelis {
-        display: block;
-        padding: 10px;
+    .menu-hamburguesa {
+        display: none;
     }
 
-    .imgPeliculas1,
-    .imgPeliculas2 {
-        display: block;
+    .menu-hamburguesa ul {
+        list-style: none;
+        padding: 0;
     }
 
-    img {
-        width: 100%;
-        padding: 8px;
+    .menu-hamburguesa ul li {
+        margin-bottom: 10px;
     }
 
-    .img1,
-    .img2,
-    .img3,
-    .img4 {
-        width: 100%;
-        padding: 10px;
+    .menu-hamburguesa ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 18px;
     }
-
-    footer .logo img {
-        float: none;
-        text-align: center;
-        position: relative;
-        left: 45%;
-    }
-
-}
-
-/* TABLET*/
-
-@media screen and (min-width:768px) and (max-width: 1024px) {
-
-.menu {
-    flex-direction: column;
-    align-items: center;
-}
-
-.menu>.barraMenu {
-    width: 100%;
-    text-align: center;
-}
-
-.menu>.barraMenu>ul>li {
-    margin: 50px;
-    font-size: 30px;
-}
-
-.menu>.barraMenu>ul {
-    padding-left: 0;
-}
-
-.menu>.buscador {
-    display: none;
-}
-
-#imagenHamburguesa {
-    display: block;
-    margin-bottom: 20px;
-}
-
-.item1 {
-
-    height: 20%;
-    position: absolute;
-    width: 100%;
-    display: none;
-}
-
-.footer {
-    text-align: center;
-}
 }

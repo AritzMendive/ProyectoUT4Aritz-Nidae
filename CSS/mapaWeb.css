@@ -1,62 +1,149 @@
+/* GENERAL*/
+ 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: black;
+    
 }
 
+/* MENU */
+
 .menu {
-    background-color: #333;
-    color: #fff;
+    background-color: black;
+    color: white;
     padding: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.logo {
-    font-size: 30px;
+.logo img{
+    width: 200px;
+    height: 100px;
 }
-
 .buscador {
     flex-grow: 1;
     text-align: center;
+    position: relative;
+    size: 50px;
+}
+.cajaBuscar{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    padding-right: 5px;
+}
+input[type = "search"]:hover, input[type ="submit"]:hover{
+    border: 2px solid blue;
+    size: 50px;
 }
 
-.barraMenu {
-    display: flex;
+.barraMenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    font-size: x-large;
 }
 
-.menu div {
-    padding: 0 10px;
-}
-.redesSociales{
-    background-color: aqua;
-}
-p {
+
+
+/* BARRA MENU */
+
+.barraMenu>ul>li a {
     color: white;
-    margin-left: 3%;
-    margin-right: 3%;
+    text-decoration: none;
+}
+
+.barraMenu>ul>li:hover {
+    background-color: rgb(17, 7, 158);
+}
+
+.barraMenu>ul>li ul.dropdown li {
+    display: block;
+    padding: 18px 20px;
+}
+
+.barraMenu>ul>li ul.dropdown li:hover {
+    background-color: #d1596d;
+}
+
+
+.barraMenu>ul>li ul.dropdown {
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+.barraMenu>ul>li:hover ul.dropdown {
+    display: block;
+    background-color: black;
+}
+.barraMenu>ul>li {
+    float: left;
+    padding: 10px;
+    display: block;
+    background-color: black;
+     
+
+}
+/*li:nth-child(odd){
+    background-color: #2fa1fe;
+}*/
+.genColores li:nth-child(even){
+    background-color: #7e2ffed3;
+}
+ul.dropdown img{
+    width: 20px;
+}
+
+/* CONTENIDO CUERPO*/
+.cuerpo{
+    background-color: rgba(141, 141, 5, 0.274);
+    color: rgb(25, 101, 241);
+    padding: 60px 100px;
     text-align: justify;
 }
-h1 {
-    color: blue;
-    font-style: italic;
-    
+p{
+    color: black;
+    line-height: 1.8;
 }
 h2{
-    color: blue;
+    text-transform: uppercase;
 }
-li {
+
+
+
+/* FOOTER */
+.footer {
+    background-color: black;
+    color: #0fdd3c;
+    padding: 30px;
+    
+}
+.footerLista{
+    margin: 0;
+    padding: 20px;
+    text-align: center;
     color: white;
 }
-
-
-.footer {
-    background-color: #333;
-    color: #fff;
+.footerLista a{
+    display: inline;
+    margin-right: 20px;   
+}
+.footerSpan{
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 576px) {
+    
+}
+@media screen and (min-width:577px) and (max-width: 1024px) {
+    
+}
+@media screen and (min-width: 1025px) {
+    
 }

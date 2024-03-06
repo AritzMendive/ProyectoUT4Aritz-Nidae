@@ -1,153 +1,242 @@
+/* GENERAL*/
+ 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    
 }
+
+/* MENU */
 
 .menu {
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
+    background-color: black;
+    color: white;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.logo {
-    font-size: 30px;
+.logo img{
+    width: 200px;
+    height: 100px;
 }
+ /* DIV PRINCIPAL */
 
+
+.primerDiv > .item1 {
+    background-color: rgba(141, 141, 5, 0.274);
+    color: rgb(25, 101, 241);
+    padding: 10px 0;
+  }
 .buscador {
     flex-grow: 1;
     text-align: center;
+    position: relative;
+    size: 50px;
 }
-
-
+.cajaBuscar{
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    padding-right: 5px;
+}
+input[type = "search"]:hover, input[type ="submit"]:hover{
+    border: 2px solid blue;
+    size: 50px;
+}
 
 .barraMenu ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     overflow: hidden;
-    background-color: #333;
+    font-size: x-large;
 }
 
-.barraMenu >ul >li{
-    float: left;
-    display: block;
-    padding: 10px;
-    background-color: #333;
-    
-}
 
-.barraMenu >ul >li a{
+
+/* BARRA MENU */
+
+.barraMenu>ul>li a {
     color: white;
     text-decoration: none;
 }
 
-.barraMenu >ul >li:hover{
-background-color: rgb(0, 0, 0);
+.barraMenu>ul>li:hover {
+    background-color: rgb(17, 7, 158);
 }
 
-.barraMenu >ul >li ul.dropdown li{
+.barraMenu>ul>li ul.dropdown li {
     display: block;
     padding: 18px 20px;
 }
 
-.barraMenu >ul >li ul.dropdown li:hover{
-    background-color: #2fa1fe;
+.barraMenu>ul>li ul.dropdown li:hover {
+    background-color: #d1596d;
 }
 
 
-.barraMenu >ul >li ul.dropdown{
+.barraMenu>ul>li ul.dropdown {
     position: absolute;
     z-index: 999;
     display: none;
 }
 
-.barraMenu >ul >li:hover ul.dropdown{
-    background-color: rgb(0, 0, 0);
+.barraMenu>ul>li:hover ul.dropdown {
     display: block;
-    
-}
-li img{
-    width: 25px;
-    height: 25px;
-}
-label img{
-    width: 5%;
-    height: 5%;
-}
-.cajaBuscar{
-    background-color: #2fa1fe;
-}
-form{
-    display: block;
-}
-
-div.imgPeliculas{
-    float: left;
-    display: inline;
-    position: relative;
-}
-.img1, .img2, .img3{
-    width: 15%;
-}
-
-
-    
-
-
-
-
-.menu div {
-    padding: 0 10px;
-}
-.terror, .comedia, .drama, .romance {
-    padding: 20px;
-}
-
-.terror {
-    background-color: #FF5733;
-}
-
-.comedia {
-    background-color: #00FF00;
-}
-
-.drama {
-    background-color: #2fa1fe;
-}
-.romance{
-    background-color: red;
-}
-
-.footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    bottom: 0;
-    width: 100%;
-}
-
-
-.item1 {grid-area: menu;}
-.vistaGrid {
-    display: grid;
-    grid-template-areas:
-      'menu menu menu menu';
-
     background-color: black;
-  }
+}
+.barraMenu>ul>li {
+    float: left;
+    padding: 10px;
+    display: block;
+    background-color: black;
+     
 
-.vistaGrid > div {
-    background-color: rgba(255, 255, 255, 0.8);
+}
+/*li:nth-child(odd){
+    background-color: #2fa1fe;
+}*/
+.genColores li:nth-child(even){
+    background-color: #7e2ffed3;
+}
+ul.dropdown img{
+    width: 20px;
+}
+
+
+/* CONTENIDO PAGINA */
+
+.cuerpoPelis{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 80px;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 100px;
+
+}
+
+p{
+    padding: 50px;
+    text-align: justify;
+    font-size: x-large;
+    color: black;
+    box-shadow: 8px 8px 5px #854343;
+    border: 1px solid #854343;
+    padding: 8px 12px;
+}
+
+
+
+
+/* IMAGENES */
+
+.imgPeliculas1, .imgPeliculas2{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 30%;
+    padding: 8px;
+}
+
+
+.img1,
+.img2,
+.img3, .img4 {
+   width: 250px;
+   padding: 10px;
+   box-sizing: border-box;
+   align-items: baseline;
+}
+
+
+/* SECCIONES GENERO */
+
+h1{
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.terror,
+.comedia,
+.drama,
+.romance {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.resumen1, .resumen2{
     text-align: center;
-    font-size: 30px;
-  }
+}
 
-  .vistaGrid > .item1 {
-    background-color: rgb(29, 29, 29);
-    color: rgb(25, 101, 241);
-    padding: 10px 0;
-  }
+
+.resumen1 img{
+   margin-bottom: 20px;
+}
+
+.resumen2 img{
+    margin-bottom: 20px;
+}
+
+
+
+
+/* FOOTER */
+.footer {
+    background-color: black;
+    color: #0fdd3c;
+    padding: 30px;
+    
+}
+.footerLista{
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+.footerLista a{
+    display: inline;
+    margin-right: 20px;   
+}
+.footerSpan{
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+/* MOVIL*/
+
+@media only screen and (min-width:360px) and (max-width: 400px) {
+/* CONTENIDO PAGINA */
+.cuerpoPelis{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 80px;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 100px;
+
+}
+}
+/* TABLET*/
+
+@media screen and (min-width:768px) and (max-width: 1024px) {
+    
+}
+/*PANTALLAS DESKTOP*/
+
+@media screen and (min-width: 1024px) {
+    
+}

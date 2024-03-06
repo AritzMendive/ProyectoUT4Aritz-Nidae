@@ -5,71 +5,117 @@ body {
 }
 
 .menu {
-    background-color: #333;
-    color: #fff;
-    padding: 10 px 5px;
-    display: flex;
-    justify-content: space-between;
-    border-bottom: none;
-    
+  background-color: rgb(68, 64, 64);
+  color: white;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.logo {
-    height: 50px;
+.logo img {
+  width: 200px;
+  height: 100px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+/* DIV PRINCIPAL */
+
+
+.primerDiv>.item1 {
+  background-color: black;
+  color: rgb(25, 101, 241);
 }
 
 .buscador {
-    flex-grow: 1;
-    text-align: center;
+  flex-grow: 1;
+  text-align: center;
+  position: relative;
+  size: 50px;
 }
 
+.cajaBuscar {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  padding-right: 5px;
+}
 
+input[type="search"]:hover,
+input[type="submit"]:hover {
+  border: 2px solid blue;
+  size: 50px;
+}
 
 .barraMenu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-.barraMenu >ul >li{
-    float: left;
-    display: block;
-    padding: 10px;
-    background-color: #333;
-    
-}
-
-.barraMenu >ul >li a{
-    color: white;
-    text-decoration: none;
-}
-
-.barraMenu >ul >li:hover{
-background-color: rgb(0, 0, 0);
-}
-
-.barraMenu >ul >li ul.dropdown li{
-    display: block;
-    padding: 18px 20px;
-}
-
-.barraMenu >ul >li ul.dropdown li:hover{
-    background-color: #2fa1fe;
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
+  overflow: hidden;
+  font-size: x-large;
 }
 
 
-.barraMenu >ul >li ul.dropdown{
-    position: absolute;
-    z-index: 999;
-    display: none;
+
+/* BARRA MENU */
+
+.barraMenu>ul>li a {
+  color: white;
+  text-decoration: none;
 }
 
-.barraMenu >ul >li:hover ul.dropdown{
-    background-color: rgb(0, 0, 0);
-    display: block;
-    
+.barraMenu>ul>li:hover {
+  background-color: rgba(40, 27, 209, 0.726);
+}
+
+.barraMenu>ul>li ul.dropdown li {
+  display: block;
+  padding: 18px 20px;
+}
+
+.barraMenu>ul>li ul.dropdown li:hover {
+  background-color: #d1596d;
+}
+
+
+.barraMenu>ul>li ul.dropdown {
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+.barraMenu>ul>li:hover ul.dropdown {
+  display: block;
+  background-color: black;
+}
+
+.barraMenu>ul>li {
+  float: left;
+  padding: 10px;
+  display: block;
+  background-color: black;
+
+
+}
+
+li .active{
+  background-color: blue;
+}
+
+.barraMenu>ul>li a.active {
+  background-color: rgb(17, 7, 158);
+}
+
+.genColores li:nth-child(even) {
+  background-color: #716febd3;
+}
+
+ul.dropdown img {
+  width: 20px;
 }
 .menuVertical {
   width: 99%;
@@ -318,11 +364,36 @@ td{
 
 
 .footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
+  background-color: rgb(68, 64, 64);
+  color: white;
+  padding: 30px;
+
 }
+
+.footerLista {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.footerLista a {
+  display: inline;
+  margin-right: 20px;
+  color: white;
+}
+
+.footerSpan {
+  text-align: center;
+}
+
+footer .logo img {
+  float: none;
+  text-align: center;
+  position: relative;
+  left: 45%;
+}
+
 
 
 

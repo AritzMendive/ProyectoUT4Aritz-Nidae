@@ -11,37 +11,70 @@
             <div class="item1">
                 <div class="menu">
                     <div class="logo">
-                        <img src="img/logo.png" height="50px" alt="logo"/>
+                        <img src="img/logo.png" alt="logo" />
                     </div>
                     <div class="buscador">
                         <form action="Buscador.html" method="get">
-                            <label for="buscar"><img src="img/buscar.png" alt="buscador"></label>
-                            <input type="text" name="buscar" id="buscar" size="80" class="cajaBuscar">
+                            <img src="img/buscar.png" alt="cajaBuscar"
+                                class="cajaBuscar">
+                            <input type="search" name="cajaBuscar"
+                                placeholder="Pelicula, autor, director...">
+                            <input type="submit" value="Buscar">
                         </form>
                     </div>
-                            <div class="barraMenu">
+                    <nav class="barraMenu">
                         <ul>
-                            <li><a href="Index.html">Inicio</a></li>
-                            <li>Género
+                            <li><a href="Index.html" >Inicio</a></li>
+                            <li class="genColores" class="active">Género
                                 <ul class="dropdown">
                                     <li><a href="Terror.html">Terror</a></li>
                                     <li><a href="Comedia.html">Comedia</a></li>
                                     <li><a href="Drama.html">Drama</a></li>
                                     <li><a href="Romance.html">Romance</a></li>
                                 </ul>
-            
                             </li>
-                            <li>Mapa Web</li>
-                            <li>Contáctanos
+                            <li><a href="MapaWeb.html">Mapa Web</a></li>
+                            <li class="genColores">Contáctanos
                                 <ul class="dropdown">
-                                    <li><a href="#"><img src="img/X.png" alt="twitter"></a></li>
-                                    <li><a href="#"><img src="img/facebook.png" alt="facebook"></a></li>
-                                    <li><a href="#"><img src="img/youtube.png" alt="facebook"></a></li>
+                                    <li><a href="MapaWeb.html"><img
+                                                src="img/X.png"
+                                                alt="twitter"></a></li>
+                                    <li><a href="MapaWeb.html"><img
+                                                src="img/facebook.png"
+                                                alt="facebook"></a></li>
+                                    <li><a href="MapaWeb.html"><img
+                                                src="img/youtube.png"
+                                                alt="facebook"></a></li>
+                                    <li><a href="MapaWeb.html"><img
+                                                src="img/linkedin.png"
+                                                alt="LinkedIn"></a></li>
                                 </ul>
                             </li>
-                            </ul>
-                    </div>
-            
+                        </ul>
+                    </nav>
+                    <!-- div id="menu-hamburguesa" class="menu-hamburguesa">
+                        <img src="img/hamburguesa.png" alt="menuHamburguesa" height="70px" id="imagenHamburguesa">
+                        <ul>
+                            <li><a href="Index.html" class="active">Inicio</a></li>
+                            <li class="genColores">Género
+                                <ul class="dropdown">
+                                    <li><a href="Terror.html">Terror</a></li>
+                                    <li><a href="Comedia.html">Comedia</a></li>
+                                    <li><a href="Drama.html">Drama</a></li>
+                                    <li><a href="Romance.html">Romance</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="MapaWeb.html">Mapa Web</a></li>
+                            <li class="genColores">Contáctanos
+                                <ul class="dropdown">
+                                    <li><a href="MapaWeb.html"><img src="img/X.png" alt="twitter"></a></li>
+                                    <li><a href="MapaWeb.html"><img src="img/facebook.png" alt="facebook"></a></li>
+                                    <li><a href="MapaWeb.html"><img src="img/youtube.png" alt="facebook"></a></li>
+                                    <li><a href="MapaWeb.html"><img src="img/linkedin.png" alt="LinkedIn"></a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div> -->
                 </div>
         
             </div>
@@ -310,9 +343,37 @@
             </div>
         </div>
 
-        <div class="footer">
-            FOOTER, AVISO LEGAL, MAPA WEB: https://administracion.gob.es/pag_Home/mapaWeb.html
-        </div>
+        <footer class="footer">
+            <div class="footerLista">
+
+                <a href="MapaWeb.html#mapaWeb">Mapa Web |</a>
+
+                <a href="MapaWeb.html#avisoLegal">Aviso Legal |</a>
+
+                <a href="MapaWeb.html#politicasCookies">Política de
+                    Privacidad |</a>
+
+                <a href="MapaWeb.html#politicasCookies">Política de cookies
+                    |</a>
+
+                <a href="MapaWeb.html#redesSociales">Redes Sociales |</a>
+            </div>
+            <div class="footerSpan">
+                <span>
+                    2023-2024 | ENA FILMS es una página de recomendación de
+                    películas y series, y es un medio totalmente
+                    independiente cuya principal prioridad es la privacidad
+                    y seguridad de los datos de sus
+                    usuarios.
+                    All Rights Reserved - Todos los derechos reservados
+                </span>
+            </div>
+            <div class="logo">
+                <img src="img/logo.png" alt="logo" height="80px" />
+            </div>
+
+        </footer>
+
 
     </body>
 
